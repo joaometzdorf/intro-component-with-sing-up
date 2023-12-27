@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main>
+
+    <section class="about__offer">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </section>
+
+    <section>
+      <button data-btn-offer><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+
+      <form data-form>
+
+        <input type="text" name="First Name" id="first__name" placeholder="First Name" required>
+        <span class="validity__error"></span>
+
+        <input type="text" name="Last Name" id="last__name" placeholder="Last Name" required>
+        <span class="validity__error"></span>
+
+        <input type="email" name="Email" id="email" placeholder="Email Address"
+          pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9]\.[a-z]{2,}" required>
+        <span class="validity__error"></span>
+
+        <input type="password" name="Password" id="password" placeholder="Password" required>
+        <span class="validity__error"></span>
+
+        <button data-btn-submit type="submit">CLAIM YOUR FREE TRIAL</button>
+
+        <footer>
+          By clicking the button, you are agreeing to our <strong class="strong__style"><a href="#">Terms and
+              Services</a></strong>
+        </footer>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer__attribution">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/joaometzdorf" target="_blank">João Metzdorf</a>.
+    </p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
