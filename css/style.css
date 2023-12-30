@@ -49,6 +49,13 @@ main .about__offer {
   }
 }
 
+.form__for-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 [data-btn-offer] {
   border: none;
   border-radius: 0.5rem;
